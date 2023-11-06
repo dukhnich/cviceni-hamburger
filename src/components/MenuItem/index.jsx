@@ -1,8 +1,8 @@
 import './style.css';
 
-export const MenuItem = ({ text }) => {
+export const MenuItem = ({ text, onSelect }) => {
   return (
-    <a href="#" className="menu-item">
+    <a href="#" className="menu-item" onClick={() => onSelect()}>
       {text}
     </a>
   );
